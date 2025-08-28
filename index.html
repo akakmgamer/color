@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <style>
+            *{
+                margin:0px;
+                padding:0px;
+            }
+            body{
+                height:100vh;
+                width:100%;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                background-color:red;
+                transition:2s all linear;
+            }
+            input{
+                padding:10px 20px;
+                font-size:25px;
+                font-weight:bold;
+                border:3px solid black;
+                border-radius:12px;
+                transition:2s all linear;
+            }
+        </style>
+    </head>
+    <body>
+       <input type="text">
+        <script>
+       var body=document.querySelector("body");
+       var input=document.querySelector("input");
+       setInterval(function(){body.style.backgroundColor=input.value
+        input.style.color=input.value;
+
+       },1000);
+        </script>
+    </body>
+</html>
